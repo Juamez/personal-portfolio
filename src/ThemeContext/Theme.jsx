@@ -9,6 +9,9 @@ const Theme = extendTheme({
       cambridgeBlue: "#bcd9c1ff", 
       flax: "#e9d985ff"
     }
+  },
+  font: {
+    font: 'Exo 2'
   }
 })
 
