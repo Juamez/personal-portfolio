@@ -10,12 +10,14 @@ import {
   Link
 } from '@chakra-ui/react'
 import { GrMenu } from "react-icons/gr"
+import {ColorModeSwitcher} from '../ColorModeSwitcher'
 
 const HamburgerMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
     <>
+      <ColorModeSwitcher mt={1}/>
       <IconButton
         position="fixed"
         top="0"
