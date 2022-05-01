@@ -1,24 +1,25 @@
 import React from 'react'
-import {Flex, Grid, Box, Heading } from '@chakra-ui/react'
+import { Grid, Box, Heading } from '@chakra-ui/react'
 
 import ProjectCard from '../components/ProjectCard'
-import image from '../assets/LoopStudios Desktop.png'
+
+import imagePortfolio from '../assets/Juan Pablo Mendez.png'
+import imageLoop from '../assets/Loopstudios landing page.png'
 import imageIP from '../assets/IP-Address-Tracker.png'
 
 
 const Projects = () => {
   return (
-    <Box id="projects" p={{base: "0", md:"70px"}} height="100vh">
-      <Heading textAlign="center" mb={{base:"0", md:"95px"}}>Projects</Heading>
-      <Flex>
-        <Grid templateRows="repeat(3, 1fr)" gap={6} mt={"3rem"}>
+    <Box id="projects" p={{base: "0", md:"70px"}} w="100%" mb="3rem">
+      <Heading textAlign="center" mb={{base:"2.5rem", md:"5rem"}}>Projects</Heading>
+        <Grid templateRows="repeat(3, 1fr)" gap={6} w="100%"> 
         <ProjectCard 
-            url={imageIP}
+            url={imagePortfolio}
             title={"Personal Portfolio"}
             info={"Made this project using React, chakraUI and Framer Motion to show about myself and related projects while learned these technologies"}
             labelName={"React"} labelName1={"ChakraUI"}
-            hrefDemo={""}
-            hrefCode={""}
+            hrefDemo={"https://juamez.vercel.app/"}
+            hrefCode={"https://github.com/Juamez/personal-portfolio"}
           />
           
           <ProjectCard 
@@ -30,7 +31,7 @@ const Projects = () => {
             hrefCode={"https://github.com/Juamez/ip-address-challenge"}
           />
           <ProjectCard 
-            url={image}
+            url={imageLoop}
             title={"Loop Studios Page"}
             info={"Web page mobile first workflow using html & sass"}
             labelName={"Html"} labelName1={"Sass"}
@@ -38,7 +39,7 @@ const Projects = () => {
             hrefCode={"https://github.com/Juamez/Loopstudios-landing-page"}
           />         
         </Grid>
-      </Flex>
+      
     </Box>
   )
 }
