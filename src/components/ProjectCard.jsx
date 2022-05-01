@@ -6,18 +6,18 @@ import {FaStar, FaCode} from 'react-icons/fa'
 
 const ProjectCard = ({ url, title, info, labelName, labelName1, hrefDemo, hrefCode}) => {
   return (
-    <GridItem w="100%" h="70vh" my="5rem" display="flex" flexDirection={{base:"column", md:"row"}} alignItems="center" justifyContent="space-around">
-      <Image src={url} boxSize={500} objectFit="cover" ml="5rem" mw="280px"/>
-      <Flex direction="column" alignItems="center" w={{base:"100%", md:"100%"}} h="80%" mt={"1.5rem"} ml="6rem">
-        <Heading mb="20px" mx="3rem" textAlign="center">{title}</Heading>
-        <Text px={{base:"1rem", md:"0"}}>
+    <GridItem w={{base: "100%", md: "100%"}} d="flex" flexDirection={{base:"column", md:"row"}} alignItems="center" justifyContent="space-around" mt={{base: "1rem", md: "6rem"}} mx={{base:0, md: "3rem"}}>
+      <Image src={url} boxSize={{base: 290, md: 400}} objectFit="contain" alignSelf="center" />
+      <Flex direction="column" alignItems="center" justifyContent="center" w={{base:"100%", md:"100%"}} h="100%" mb="1rem" mx={{base: 0, md: "4rem"}}>
+        <Heading mb={{base: "2rem", md: "3rem"}} mx="1.5rem" textAlign="center">{title}</Heading>
+        <Text mx="2.3rem">
           {info}
         </Text>
-        <Flex mt="25px" justify="center" w="100%">
+        <Flex mt="2rem" justify="center" w="100%">
             <TagName labelName={labelName}/>
             <TagName labelName={labelName1}/>
         </Flex>
-        <Flex mt={"50px"} ml={"25px"}>
+        <Flex mt={"3rem"}>
           <ButtonView action={"Demo"} href={hrefDemo} icon={FaStar}/>
           <ButtonView action={"Code"} href={hrefCode} icon={FaCode}/>
         </Flex>
