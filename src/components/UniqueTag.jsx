@@ -3,7 +3,7 @@ import { Tag } from '@chakra-ui/react'
 
 const TagName = ({ labelName }) => {
   return (
-    <Tag mr="10px">{labelName}</Tag>
+    <Tag mx="1rem">{labelName}</Tag>
   )
 }
 
