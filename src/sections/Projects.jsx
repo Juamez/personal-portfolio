@@ -15,6 +15,7 @@ const Projects = () => {
         <Grid templateRows="repeat(3, 1fr)" gap={6} w="100%"> 
         <ProjectCard 
             url={imagePortfolio}
+            alt={"Personal Portfolio HomePage"}
             title={"Personal Portfolio"}
             info={"Made this project using React, chakraUI and Framer Motion to show about myself and related projects while learned these technologies"}
             labelName={"React"} labelName1={"ChakraUI"}
@@ -24,6 +25,7 @@ const Projects = () => {
           
           <ProjectCard 
             url={imageIP}
+            alt={"IP Address Tracker Page"}
             title={"IP Address Tracker"}
             info={"Create a ip address tracker using Leaflet and Mapbox libraries also working with data from IP Geolocation API"}
             labelName={"Javascript"} labelName1={"Css"}
@@ -32,6 +34,7 @@ const Projects = () => {
           />
           <ProjectCard 
             url={imageLoop}
+            alt={"LoopStudios Landing Page"}
             title={"Loop Studios Page"}
             info={"Web page mobile first workflow using html & sass"}
             labelName={"Html"} labelName1={"Sass"}
