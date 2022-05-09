@@ -3,9 +3,9 @@ import { Grid, Box, Heading } from '@chakra-ui/react'
 
 import ProjectCard from '../components/ProjectCard'
 
-import imagePortfolio from '../assets/Juan Pablo Mendez.png'
-import imageLoop from '../assets/Loopstudios landing page.png'
-import imageIP from '../assets/IP-Address-Tracker.png'
+import imagePortfolio from '../assets/Juan Pablo Mendez.webp'
+import imageLoop from '../assets/Loopstudios landing page.webp'
+import imageIP from '../assets/IP-Address-Tracker.webp'
 
 
 const Projects = () => {
